@@ -33,5 +33,5 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 fi
 
 setxkbmap -option caps:escape
-syndaemon -t -k -i 2 -d
+#syndaemon -t -k -i 2 -d
 exec i3
