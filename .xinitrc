@@ -34,4 +34,5 @@ fi
 
 setxkbmap -option caps:escape
 #syndaemon -t -k -i 2 -d
+VBoxClient-all
 exec i3
