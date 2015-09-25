@@ -13,6 +13,7 @@ zstyle :compinstall filename '/home/matt/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+[[ -e ~/.profile ]] && emulate sh -c 'source ~/.profile'
 
 bindkey '^R' history-incremental-pattern-search-backward
 
