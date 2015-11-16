@@ -64,3 +64,9 @@ let g:vdebug_options= {
     \    "marker_closed_tree" : '▸',
     \    "marker_open_tree" : '▾'
     \}
+
+autocmd FileType php let b:dispatch = './codescent.zsh %'
+" Doesn't work, currently
+" autocmd FileType php setlocal errorformat+=%f:%l:%c:\ %t%*[a-zA-Z]\ -\ %m
+autocmd FileType javascript let b:dispatch = 'grunt sniff --file=%'
+let g:ctrlp_custom_ignore = 'node_modules'
