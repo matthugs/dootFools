@@ -15,3 +15,4 @@ ssh-add -l > /dev/null || alias ssh='ssh-add -l > /dev/null || ssh-add && unalia
 
 alias ls='ls --color=auto'
 
+alias open='vim -p $(cat relevant-files)'
