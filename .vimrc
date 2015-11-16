@@ -13,10 +13,15 @@ Plugin 'guns/vim-clojure-static'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'tpope/vim-dispatch'
 Plugin 'kana/vim-textobj-user'
+Plugin 'sgur/vim-textobj-parameter'
 Plugin 'reedes/vim-textobj-quote'
 Plugin 'pangloss/vim-javascript'
 Plugin '2072/PHP-Indenting-for-VIm'
 Plugin '2072/vim-syntax-for-PHP'
+Plugin 'gtags.vim'
+Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'joonty/vdebug.git'
+Plugin 'kien/ctrlp.vim'
 call vundle#end()
 filetype plugin indent on
 
