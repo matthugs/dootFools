@@ -16,3 +16,5 @@ ssh-add -l > /dev/null || alias ssh='ssh-add -l > /dev/null || ssh-add && unalia
 alias ls='ls --color=auto'
 
 alias open='vim -p $(cat relevant-files)'
+alias clip='xclip -o | xclip -selection c'
+alias clap='xclip -selection c -o'
