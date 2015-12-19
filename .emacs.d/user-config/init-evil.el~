@@ -1,0 +1,12 @@
+
+(setq evil-cross-lines t)
+(setq evil-want-C-u-scroll t)
+(global-evil-leader-mode 1)
+(evil-mode 1)
+
+(use-package evil-leader)
+(use-package evil
+	     :config
+	     (setq evil-want-C-u-scroll t)
+	     (setq-default evil-symbol-word-search t)
+	     (evil-mode 1))
