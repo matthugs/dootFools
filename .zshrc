@@ -21,3 +21,7 @@ fpath=($fpath ~/.zsh/funcs)
 
 autoload -Uz git-escape-magic
 git-escape-magic
+
+autoload bashcompinit
+bashcompinit
+eval "$(_WAYRUNNER_COMPLETE=source wayrunner)"
