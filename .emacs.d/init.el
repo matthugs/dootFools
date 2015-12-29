@@ -9,6 +9,7 @@
 (setq use-package-always-ensure t)
 
 (add-to-list 'load-path (expand-file-name "user-config" user-emacs-directory))
+'(safe-local-variable-values (quote ((projectile-svn-command . "find . -type f -print0")))))
 
 (require 'use-package)
 (require 'init-evil)
