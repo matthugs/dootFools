@@ -7,6 +7,7 @@
 	     (evil-leader/set-leader "<SPC>")
 	     (evil-leader/set-key
 	       "b" 'projectile-switch-to-buffer
+	       "g" 'ggtags-find-tag-dwim
 	       "f" 'helm-projectile-find-file))
 (use-package evil
 	     :init
