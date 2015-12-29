@@ -1,7 +1,9 @@
 (defun my-php-mode-setup ()
   "sets up styling and modes according to the Matt Hughes-approved
     way"
-  (c-set-style "wf-php"))
+  (c-set-style "wf-php")
+  (ggtags-mode)
+  )
 (c-add-style "wf-php"
 	     '("php"
 	       (c-basic-offset . 2)))
