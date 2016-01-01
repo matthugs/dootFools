@@ -16,6 +16,8 @@
 	     :config
 	     (evil-mode 1)
 	     (define-key evil-window-map (kbd "C-k") 'evil-window-up)
+	     (define-key evil-window-map (kbd "C-h") 'evil-window-left)
+	     (define-key evil-window-map (kbd "C-l") 'evil-window-right)
 	     (define-key evil-window-map (kbd "C-j") 'evil-window-down))
 
 (provide 'init-evil)
