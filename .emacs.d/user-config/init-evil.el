@@ -8,6 +8,9 @@
 	     (evil-leader/set-key
 	       "b" 'helm-projectile-switch-to-buffer
 	       "g" 'ggtags-find-tag-dwim
+	       "md" 'magit-dispatch-popup
+	       "ms" 'magit-status
+	       "mb" 'magit-blame
 	       "f" 'helm-projectile-find-file))
 (use-package evil
 	     :init
