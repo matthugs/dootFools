@@ -11,6 +11,7 @@
 (add-to-list 'load-path (expand-file-name "user-config" user-emacs-directory))
 
 (require 'use-package)
+(require 'init-magit)
 (require 'init-evil)
 (require 'init-php)
 (require 'init-copypasta)
@@ -29,7 +30,6 @@
   :config
   (helm-projectile-on))
 
-(use-package magit)
 ;; the main goals of my customized faces is to make all the magit
 ;; headings show up in tmux terminals, which is where I tend to do all
 ;; of my emacsin'
