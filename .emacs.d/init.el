@@ -30,3 +30,18 @@
   (helm-projectile-on))
 
 (use-package magit)
+;; the main goals of my customized faces is to make all the magit
+;; headings show up in tmux terminals, which is where I tend to do all
+;; of my emacsin'
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(magit-blame-heading ((t (:background "green" :foreground "black")))))
