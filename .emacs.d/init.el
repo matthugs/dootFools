@@ -30,6 +30,14 @@
   :config
   (helm-projectile-on))
 
+;; mother of god
+(setq-default indent-tabs-mode nil)
+(menu-bar-mode -1)
+(tool-bar-mode -1)
+
+(add-hook 'javascript-mode-hook (lambda ()
+				  (setq js-indent-level 2)))
+
 ;; the main goals of my customized faces is to make all the magit
 ;; headings show up in tmux terminals, which is where I tend to do all
 ;; of my emacsin'
