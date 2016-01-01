@@ -30,6 +30,15 @@
   :config
   (helm-projectile-on))
 
+(use-package web-mode
+  :mode ("\\.mustache\\'" "\\.scss\\'")
+  :config
+  (setq web-mode-markup-indent-offset 2)
+ (web-mode-code-indent-offset 2)
+ (web-mode-indent-style 2)
+ (web-mode-markup-indent-offset 2)
+ (web-mode-sql-indent-offset 2))
+
 ;; mother of god
 (setq-default indent-tabs-mode nil)
 (menu-bar-mode -1)
