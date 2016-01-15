@@ -6,7 +6,8 @@
   )
 (c-add-style "wf-php"
 	     '("php"
-	       (c-basic-offset . 2)))
+	       (c-basic-offset . 2)
+               (c-offsets-alist . ((arglist-intro . ++)))))
 	       
 (use-package php-mode
   :mode "\\.php\\'"
