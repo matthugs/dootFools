@@ -34,18 +34,21 @@
   :mode ("\\.mustache\\'" "\\.scss\\'")
   :config
   (setq web-mode-markup-indent-offset 2)
- (web-mode-code-indent-offset 2)
- (web-mode-indent-style 2)
- (web-mode-markup-indent-offset 2)
- (web-mode-sql-indent-offset 2))
+ (setq web-mode-code-indent-offset 2)
+ (setq web-mode-indent-style 2)
+ (setq web-mode-markup-indent-offset 2)
+ (setq web-mode-sql-indent-offset 2))
 
 ;; mother of god
 (setq-default indent-tabs-mode nil)
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 
-(add-hook 'javascript-mode-hook (lambda ()
-				  (setq js-indent-level 2)))
+(defun my-javascript-mode-hook ()
+  (message "stupid")
+  (setq js-indent-level 2)
+  )
+(add-hook 'js-mode-hook 'my-javascript-mode-hook)
 
 ;; the main goals of my customized faces is to make all the magit
 ;; headings show up in tmux terminals, which is where I tend to do all
