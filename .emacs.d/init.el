@@ -18,6 +18,7 @@
 
 (use-package helm
   :demand t
+  :bind (("M-x" . helm-M-x))
   :config
   (helm-mode 1))
 
