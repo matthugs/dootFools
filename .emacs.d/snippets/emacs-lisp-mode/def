@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: emacslisp defun
+# key: def
+# --
+(defun ${1:function-name} (${2:args})
+  "${3:a user-defined function}"
+  (interactive)
+  $0
+)

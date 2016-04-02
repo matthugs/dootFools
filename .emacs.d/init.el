@@ -18,12 +18,12 @@
 
 (use-package helm
   :demand t
-  :bind (("M-x" . helm-M-x))
+  :bind (("M-x" . helm-M-x)
+         ("C-x C-f" . helm-find-files))
   :config
   (helm-mode 1))
 
 (use-package projectile
-  :ensure t
   :config
   (projectile-global-mode))
 
@@ -39,6 +39,18 @@
  (setq web-mode-indent-style 2)
  (setq web-mode-markup-indent-offset 2)
  (setq web-mode-sql-indent-offset 2))
+
+(use-package yasnippet
+  :defer t
+  :config
+  (yas-reload-all)
+  ;; (setq yas-snippet-dirs '("~/.emacs.d/snippets"))
+  ;; (setq tab-always-indent 'complete)
+  ;; (setq yas-prompt-functions '(yas-completing-prompt
+  ;;                              yas-ido-prompt
+  ;;                              yas-dropdown-prompt))
+  ;; (define-key yas-minor-mode-map (kbd "<escape>") 'yas-exit-snippet)
+  )
 
 ;; mother of god
 (setq-default indent-tabs-mode nil)
