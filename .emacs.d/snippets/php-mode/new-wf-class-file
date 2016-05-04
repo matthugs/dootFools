@@ -1,0 +1,19 @@
+# -*- mode: snippet -*-
+# name: php new wf class
+# key: php
+# --
+<?php
+/**
+ * ${1:A PHP class file}
+ *
+ * PHP Version 5
+ *
+ * @author    Matt Hughes <mahughes@wayfair.com>
+ * @copyright 2016 Wayfair LLC - All rights reserved
+ */
+
+namespace ${2:WF\Shared};
+
+public class ${3:Class_Name} {
+  $0
+}
