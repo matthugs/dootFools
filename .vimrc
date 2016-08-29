@@ -49,7 +49,7 @@ cmap Tabe tabe
 
 let g:vdebug_options= {
     \    "port" : 9001,
-    \    "path_maps" : {"/wayfair/mnt/codebase/WEBPHP147/php/" : "/home/matt/codebase/php/"},
+    \    "path_maps" : {"/wayfair/data/codebase/php/" : "/home/matt/codebase/php/"},
     \
     \    "server" : 'localhost',
     \    "timeout" : 20,
