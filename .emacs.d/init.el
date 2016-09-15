@@ -78,3 +78,18 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(magit-blame-heading ((t (:background "green" :foreground "black")))))
+
+
+(defun set-pt-number-from-magit (value)
+  (interactive "sProject Tracker number:")
+    (magit-set value (project-tracker-number-config-for-branch))
+  )
+
+(defun grab-pt-number-from-magit ()
+  (interactive)
+    (magit-get (project-tracker-number-config-for-branch))
+  )
+
+(defun project-tracker-number-config-for-branch ()
+  (format "branch.%s.project-tracker-number" (magit-branch-config-branch))
+  )
