@@ -42,6 +42,10 @@
  (setq web-mode-markup-indent-offset 2)
  (setq web-mode-sql-indent-offset 2))
 
+(use-package markdown-mode
+  :mode ("\\.\\(m\\(ark\\)?down\\|md\\)$" . markdown-mode)
+  :config)
+
 (use-package yasnippet
   :defer t
   :config
