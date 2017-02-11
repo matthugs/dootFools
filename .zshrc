@@ -23,5 +23,7 @@ autoload -Uz git-escape-magic
 git-escape-magic
 autoload bashcompinit
 bashcompinit
-eval "$(_WAYRUNNER_COMPLETE=source wayrunner)"
-export WAYRUNNER_USERNAME="mahughes"
+if command -v wayrunner; then
+    eval "$(_WAYRUNNER_COMPLETE=source wayrunner)"
+    export WAYRUNNER_USERNAME="mahughes"
+fi
