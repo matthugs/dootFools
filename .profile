@@ -19,4 +19,6 @@ alias open='vim -p $(cat relevant-files)'
 alias clip='xclip -o | xclip -selection c'
 alias clap='xclip -selection c -o'
 alias emc='emacsclient -t'
-alias tnc-rb='grunt reviews:js:sragnarajan,hhu,rregitsky,arocha,lwallmark,sdonegan,mahughes,hpaup,mgajare,yzhou,dlacasse,jbisa,tyfitzgerald,dkhandpekar,nmorin,yozhou,rkarki'
+# Old alias for deprecated grunt task syntax for getting only my WF
+# team's reviewboard requests (and no one else's)
+# alias tnc-rb='grunt reviews:js:sragnarajan,hhu,rregitsky,arocha,lwallmark,sdonegan,mahughes,hpaup,mgajare,yzhou,dlacasse,jbisa,tyfitzgerald,dkhandpekar,nmorin,yozhou,rkarki,jstephens,acheng,joclee'
