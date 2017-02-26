@@ -1,0 +1,13 @@
+#!/bin/bash
+if command -v i3-msg >/dev/null 2>&1 && command -v jq >/dev/null 2>&1 && command -v sed >/dev/null 2>&1; then
+    i3-msg -t get_workspaces \
+        | jq ".[].name" \
+        | sed -n 's/"\([^"]*\)"/\1/p' \
+        | dmenu "$@" \
+        | xargs -L1 -n1 i3-msg workspace
+else
+    cat <<EOF
+you need each of i3, jq, and sed installed to make this work. Try
+again when you have them all available
+EOF
+fi
