@@ -34,7 +34,7 @@
   (helm-projectile-on))
 
 (use-package web-mode
-  :mode ("\\.mustache\\'" "\\.scss\\'")
+  :mode ("\\.mustache\\'" "\\.css\\'" "\\.scss\\'" "\\.jsx\\'" "\\.js\\'" "\\.json\\'")
   :config
   (setq web-mode-markup-indent-offset 2)
  (setq web-mode-code-indent-offset 2)
