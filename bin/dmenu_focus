@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 if command -v i3-msg >/dev/null 2>&1 && command -v jq >/dev/null 2>&1 && command -v sed >/dev/null 2>&1; then
     i3-msg -t get_workspaces \
         | jq ".[].name" \
