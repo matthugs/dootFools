@@ -1,10 +1,6 @@
 # written using bash syntax
 # shared configuration for either bash or zsh
 
-# changes font size used for urxvt in current terminal
-function change_font_size() {
-    echo -e "\033]710;-xos4-terminus-medium-*-*-*-$1-*-*-*-*-*-iso10646-1\033\\"
-}
 
 function is_osx {
     [[ "$(uname -s)" == "Darwin" ]]
@@ -12,6 +8,11 @@ function is_osx {
 
 is_osx || {
     export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket";
+
+    # changes font size used for urxvt in current terminal
+    function change_font_size() {
+        echo -e "\033]710;-xos4-terminus-medium-*-*-*-$1-*-*-*-*-*-iso10646-1\033\\"
+    }
 
     ssh-add -l > /dev/null || alias ssh='ssh-add -l > /dev/null || ssh-add && unalias ssh; ssh';
 
@@ -26,6 +27,7 @@ alias emc='emacsclient -t'
 # alias tnc-rb='grunt reviews:js:sragnarajan,hhu,rregitsky,arocha,lwallmark,sdonegan,mahughes,hpaup,mgajare,yzhou,dlacasse,jbisa,tyfitzgerald,dkhandpekar,nmorin,yozhou,rkarki,jstephens,acheng,joclee'
 
 is_osx && {
+    export PATH="/usr/local/bin:$PATH"
     ssh-add -lK > /dev/null || alias ssh='ssh-add -lK > /dev/null || ssh-add -K && unalias ssh; ssh';
     # This function is for titling terminal tabs in iterm; not sure how widely
     # applicable it is.
