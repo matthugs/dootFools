@@ -13,9 +13,9 @@ function is_osx {
 is_osx || {
     export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket";
 
-    is_osx || ssh-add -l > /dev/null || alias ssh='ssh-add -l > /dev/null || ssh-add && unalias ssh; ssh';
+    ssh-add -l > /dev/null || alias ssh='ssh-add -l > /dev/null || ssh-add && unalias ssh; ssh';
 
-    is_osx || alias ls='ls --color=auto';
+    alias ls='ls --color=auto';
 
     alias clip='xclip -o | xclip -selection c';
     alias clap='xclip -selection c -o';
@@ -26,6 +26,7 @@ alias emc='emacsclient -t'
 # alias tnc-rb='grunt reviews:js:sragnarajan,hhu,rregitsky,arocha,lwallmark,sdonegan,mahughes,hpaup,mgajare,yzhou,dlacasse,jbisa,tyfitzgerald,dkhandpekar,nmorin,yozhou,rkarki,jstephens,acheng,joclee'
 
 is_osx && {
+    ssh-add -lK > /dev/null || alias ssh='ssh-add -lK > /dev/null || ssh-add -K && unalias ssh; ssh';
     # This function is for titling terminal tabs in iterm; not sure how widely
     # applicable it is.
     # nabbed from answers to https://superuser.com/questions/419775/with-bash-iterm2-how-to-name-tabs
