@@ -18,11 +18,14 @@ control_handler = function(evt)
     send_escape = true
     control_key_timer:start()
   else
-    if send_escape then
-      hs.eventtap.keyStroke({}, "ESCAPE")
-    end
     last_mods = new_mods
     control_key_timer:stop()
+    if send_escape then
+      return true, {
+        hs.eventtap.event.newKeyEvent({}, 'escape', true),
+        hs.eventtap.event.newKeyEvent({}, 'escape', false),
+      }
+    end
   end
   return false
 end
