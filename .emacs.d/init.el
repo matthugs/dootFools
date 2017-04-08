@@ -40,7 +40,9 @@
  (setq web-mode-code-indent-offset 2)
  (setq web-mode-indent-style 2)
  (setq web-mode-markup-indent-offset 2)
- (setq web-mode-sql-indent-offset 2))
+ (setq web-mode-sql-indent-offset 2)
+ (setq web-mode-content-types-alist
+       '(("jsx" . "\\.js[x]?\\'"))))
 
 (use-package markdown-mode
   :mode ("\\.\\(m\\(ark\\)?down\\|md\\)$" . markdown-mode)
