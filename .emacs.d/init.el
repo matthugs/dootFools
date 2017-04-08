@@ -44,10 +44,9 @@
   (setq web-mode-content-types-alist
 	'(("jsx" . "\\.js[x]?\\'"))))
 
+(push (expand-file-name "emacs-color-theme-solarized" user-emacs-directory) custom-theme-load-path)
 (setq color-themes '())
-(use-package color-theme-solarized
-  :config
-  (load-theme 'solarized t))
+(load-theme 'solarized t)
 
 (use-package markdown-mode
   :mode ("\\.\\(m\\(ark\\)?down\\|md\\)$" . markdown-mode)
