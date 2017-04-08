@@ -37,12 +37,12 @@
   :mode ("\\.mustache\\'" "\\.css\\'" "\\.scss\\'" "\\.jsx\\'" "\\.js\\'" "\\.json\\'")
   :config
   (setq web-mode-markup-indent-offset 2)
- (setq web-mode-code-indent-offset 2)
- (setq web-mode-indent-style 2)
- (setq web-mode-markup-indent-offset 2)
- (setq web-mode-sql-indent-offset 2)
- (setq web-mode-content-types-alist
-       '(("jsx" . "\\.js[x]?\\'"))))
+  (setq web-mode-code-indent-offset 2)
+  (setq web-mode-indent-style 2)
+  (setq web-mode-markup-indent-offset 2)
+  (setq web-mode-sql-indent-offset 2)
+  (setq web-mode-content-types-alist
+	'(("jsx" . "\\.js[x]?\\'"))))
 
 (setq color-themes '())
 (use-package color-theme-solarized
@@ -67,14 +67,12 @@
 
 ;; mother of god
 (setq-default indent-tabs-mode nil)
+(setq visible-bell t)
+(setq initial-scratch-message "")
+(setq inhibit-startup-message t)
+
 (menu-bar-mode -1)
 (tool-bar-mode -1)
-
-(defun my-javascript-mode-hook ()
-  (message "stupid")
-  (setq js-indent-level 2)
-  )
-(add-hook 'js-mode-hook 'my-javascript-mode-hook)
 
 ;; the main goals of my customized faces is to make all the magit
 ;; headings show up in tmux terminals, which is where I tend to do all
