@@ -33,10 +33,17 @@
   :config
   (helm-projectile-on))
 
-(use-package exec-path-from-shell
+;; (use-package exec-path-from-shell
+;;   :ensure t
+;;   :config
+;;   (exec-path-from-shell-initialize))
+
+(use-package prettier-js
   :ensure t
-  :config
-  (exec-path-from-shell-initialize))
+  :commands (prettier-js))
+  ;; add this to prettier-js once we're done with the global conversion
+  ;; :init
+  ;; (add-hook 'web-mode-hook 'prettier-js-mode))
 
 (use-package web-mode
   :mode ("\\.mustache\\'" "\\.css\\'" "\\.scss\\'" "\\.jsx\\'" "\\.js\\'" "\\.json\\'")
