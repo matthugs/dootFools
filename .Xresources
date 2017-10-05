@@ -3,9 +3,10 @@ Rxvt.depth: 32
 #Rxvt.foreground: rgba:ffff/ffff/ffff/ffff
 Rxvt.reverseVideo: True
 
-URxvt*font: -xos4-terminus-medium-*-*-*-18-*-*-*-*-*-iso8859-15,xft:terminus:pixelsize:12
+#URxvt*font: -xos4-terminus-medium-*-*-*-18-*-*-*-*-*-iso8859-15,xft:terminus:pixelsize:12
+URxvt*font: -*-terminus-medium-r-*-*-18-*-*-*-*-*-*-*
 
-URxvt.perl-ext-common: ...,font-size
+#URxvt.perl-ext-common: ...,font-size
 URxvt.keysym.C-Up:     perl:font-size:increase
 URxvt.keysym.C-Down:   perl:font-size:decrease
 URxvt.keysym.C-S-Up:   perl:font-size:incglobal
