@@ -59,7 +59,7 @@
 
 (push (expand-file-name "emacs-color-theme-solarized" user-emacs-directory) custom-theme-load-path)
 (setq color-themes '())
-(load-theme 'solarized t)
+;;(load-theme 'solarized t)
 
 (use-package markdown-mode
   :mode ("\\.\\(m\\(ark\\)?down\\|md\\)$" . markdown-mode)
