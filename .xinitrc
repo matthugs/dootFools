@@ -32,6 +32,9 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
+# attempt to load terminus font properly (location changed on last system upgrade)
+xset +fp /usr/share/fonts/misc
+
 setxkbmap -option caps:escape
 #syndaemon -t -k -i 2 -d
 VBoxClient-all
