@@ -42,6 +42,7 @@
   :mode ("\\.mustache\\'" "\\.css\\'" "\\.scss\\'" "\\.jsx\\'" "\\.js\\'" "\\.json\\'")
   :config
   (setq web-mode-markup-indent-offset 2)
+  (setq web-mode-attr-indent-offset 2)
   (setq web-mode-code-indent-offset 2)
   (setq web-mode-indent-style 2)
   (setq web-mode-markup-indent-offset 2)
@@ -74,6 +75,8 @@
 (setq visible-bell t)
 (setq initial-scratch-message "")
 (setq inhibit-startup-message t)
+;; fix for an apparent helm / helm-projectile? / tramp interoperation bug
+(setq tramp-methods nil)
 
 (menu-bar-mode -1)
 (tool-bar-mode -1)
