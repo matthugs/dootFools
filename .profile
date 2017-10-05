@@ -36,3 +36,7 @@ is_osx && {
         echo -ne "\033]0;"$*"\007"
     }
 }
+
+is_osx || {
+    export PATH="/home/matt/bin:$PATH"
+}
