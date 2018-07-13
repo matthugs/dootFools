@@ -40,10 +40,11 @@
 
 (use-package prettier-js
   :ensure t
-  :commands (prettier-js))
-  ;; add this to prettier-js once we're done with the global conversion
-  ;; :init
-  ;; (add-hook 'web-mode-hook 'prettier-js-mode))
+  :commands (prettier-js)
+  :custom
+  (prettier-js-command "prettier_d" "experiment: try out using the server-oriented parsing approach")
+  :init
+  (add-hook 'web-mode-hook 'prettier-js-mode))
 
 (use-package web-mode
   :mode ("\\.mustache\\'" "\\.css\\'" "\\.scss\\'" "\\.jsx\\'" "\\.js\\'" "\\.json\\'")
