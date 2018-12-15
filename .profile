@@ -22,9 +22,6 @@ is_osx || {
     alias clap='xclip -selection c -o';
 }
 alias emc='emacsclient -t'
-# Old alias for deprecated grunt task syntax for getting only my WF
-# team's reviewboard requests (and no one else's)
-# alias tnc-rb='grunt reviews:js:sragnarajan,hhu,rregitsky,arocha,lwallmark,sdonegan,mahughes,hpaup,mgajare,yzhou,dlacasse,jbisa,tyfitzgerald,dkhandpekar,nmorin,yozhou,rkarki,jstephens,acheng,joclee'
 
 is_osx && {
     export PATH="/usr/local/bin:$PATH"
@@ -40,8 +37,3 @@ is_osx && {
 is_osx || {
     export PATH="/home/matt/bin:$PATH"
 }
-alias jsreviews='reviews open --team="js"'
-
-
-# necessary for gpg-agent to operate properly
-export GPG_TTY=$(tty)
