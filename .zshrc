@@ -23,11 +23,3 @@ autoload -Uz git-escape-magic
 git-escape-magic
 autoload bashcompinit
 bashcompinit
-if command -v wayrunner >/dev/null 2>&1; then
-    eval "$(_WAYRUNNER_COMPLETE=source wayrunner)"
-    export WAYRUNNER_USERNAME="mahughes"
-fi
-
-if command -v wf >/dev/null 2>&1; then
-    source ~/unsynced-codebase/wf/wf_complete_zsh
-fi
