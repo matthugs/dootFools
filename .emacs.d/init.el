@@ -52,10 +52,11 @@
   :custom
   (prettier-js-command "prettier_d" "experiment: try out using the server-oriented parsing approach")
   :init
-  (add-hook 'web-mode-hook 'prettier-js-mode))
+  ;;(add-hook 'web-mode-hook 'prettier-js-mode)
+)
 
 (use-package web-mode
-  :mode ("\\.mustache\\'" "\\.css\\'" "\\.scss\\'" "\\.jsx\\'" "\\.js\\'" "\\.json\\'")
+  :mode ("\\.mustache\\'" "\\.css\\'" "\\.scss\\'" "\\.jsx\\'" "\\.js\\'" "\\.json\\'" "\\.html\\'")
   :config
   (setq web-mode-markup-indent-offset 2)
   (setq web-mode-attr-indent-offset 2)
@@ -64,7 +65,11 @@
   (setq web-mode-markup-indent-offset 2)
   (setq web-mode-sql-indent-offset 2)
   (setq web-mode-content-types-alist
-	'(("jsx" . "\\.js[x]?\\'"))))
+	'(("jsx" . "\\.js[x]?\\'")))
+  (setq web-mode-engines-alist
+        '(("django" . "\\.html\\'")
+          ("underscore" . "\\.underscore\\'")))
+)
 
 (push (expand-file-name "emacs-color-theme-solarized" user-emacs-directory) custom-theme-load-path)
 (setq color-themes '())
