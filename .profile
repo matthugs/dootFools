@@ -41,3 +41,6 @@ is_osx || {
     export PATH="/home/matt/bin:$PATH"
 }
 alias jsreviews='reviews open --team="js"'
+
+# necessary for gpg-agent to operate properly
+export GPG_TTY=$(tty)
