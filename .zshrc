@@ -23,3 +23,6 @@ autoload -Uz git-escape-magic
 git-escape-magic
 autoload bashcompinit
 bashcompinit
+
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh

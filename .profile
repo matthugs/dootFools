@@ -42,8 +42,6 @@ is_osx || {
 }
 alias jsreviews='reviews open --team="js"'
 
-export WORKON_HOME=$HOME/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
 
 # necessary for gpg-agent to operate properly
 export GPG_TTY=$(tty)
