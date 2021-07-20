@@ -37,3 +37,5 @@ is_osx && {
 is_osx || {
     export PATH="/home/matt/bin:$PATH"
 }
+
+eval $(pyenv init --path)
