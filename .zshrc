@@ -29,3 +29,9 @@ eval "$(pyenv init -)"
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
 export PATH="/usr/local/opt/mysql-client/bin:$PATH"
+
+if [[ -x "$(command -v onelogin-aws-assume-role)"  && -f ~/code/edx-internal/scripts/assume-role-onelogin.sh ]]; then
+      export ONELOGIN_EMAIL="mhughes@edx.org"
+      export UPDATE_PS1_ASSUME_ROLE=true
+      source ~/code/edx-internal/scripts/assume-role-onelogin.sh
+fi
