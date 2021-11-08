@@ -28,3 +28,4 @@ eval "$(pyenv init -)"
 
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
+export PATH="/usr/local/opt/mysql-client/bin:$PATH"
