@@ -35,3 +35,6 @@ if [[ -x "$(command -v onelogin-aws-assume-role)"  && -f ~/code/edx-internal/scr
       export UPDATE_PS1_ASSUME_ROLE=true
       source ~/code/edx-internal/scripts/assume-role-onelogin.sh
 fi
+if kubectl krew version &>/dev/null; then
+    export PATH="${PATH}:${HOME}/.krew/bin"
+fi
