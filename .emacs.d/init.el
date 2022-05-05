@@ -1,6 +1,5 @@
 (require 'package)
-(push '("melpa" . "http://melpa.milkbox.net/packages/")
-      package-archives)
+(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 (package-initialize)
 
 (unless (package-installed-p 'use-package)
@@ -110,12 +109,12 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(auth-sources (quote ("~/.authinfo.gpg" "~/.netrc" "~/.authinfo")))
+ '(auth-sources '("~/.authinfo.gpg" "~/.netrc" "~/.authinfo"))
  '(custom-safe-themes
-   (quote
-    ("8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26" default)))
- '(evil-search-module (quote evil-search))
- '(frame-background-mode (quote dark))
+   '("8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26" default))
+ '(evil-search-module 'evil-search)
+ '(frame-background-mode 'dark)
+ '(package-selected-packages '(use-package))
  '(projectile-enable-caching t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
