@@ -25,23 +25,19 @@
   (helm-mode 1))
 
 (use-package projectile
-  :ensure t
   :config
   (projectile-global-mode))
 
 (use-package helm-projectile
-  :ensure t
   :config
   (helm-projectile-on))
 
-(use-package ag
-  :ensure t)
+(use-package ag)
 
 
 (setq shell-command-switch "-ic")
 
 (use-package exec-path-from-shell
-  :ensure t
   :config
   (exec-path-from-shell-initialize))
 
