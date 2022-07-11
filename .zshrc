@@ -24,10 +24,15 @@ git-escape-magic
 autoload bashcompinit
 bashcompinit
 
-eval "$(pyenv init -)"
+if [[ -x "$(command -v pyenv)" ]]; then
+    eval "$(pyenv init -)"
 
-export WORKON_HOME=$HOME/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
+    if [[ -x "$(command -v virtualenvwrapper.sh)" ]]; then
+        export WORKON_HOME=$HOME/.virtualenvs
+        source virtualenvwrapper.sh
+    fi
+fi
+
 export PATH="/usr/local/opt/mysql-client/bin:$PATH"
 
 if [[ -x "$(command -v onelogin-aws-assume-role)"  && -f ~/code/edx-internal/scripts/assume-role-onelogin.sh ]]; then
