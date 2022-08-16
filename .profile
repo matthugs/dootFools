@@ -25,7 +25,7 @@ alias emc='emacsclient -t'
 
 is_osx && {
     export PATH="/Users/mhughes/bin:/usr/local/bin:/usr/local/sbin:$PATH"
-    ssh-add -lK > /dev/null || alias ssh='ssh-add -lK > /dev/null || ssh-add -K && unalias ssh; ssh';
+    ssh-add -l --apple-use-keychain > /dev/null || alias ssh='ssh-add -l --apple-use-keychain > /dev/null || ssh-add --apple-use-keychain && unalias ssh; ssh';
     # This function is for titling terminal tabs in iterm; not sure how widely
     # applicable it is.
     # nabbed from answers to https://superuser.com/questions/419775/with-bash-iterm2-how-to-name-tabs
