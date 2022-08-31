@@ -9,3 +9,7 @@ cask 'docker'
 brew 'docker-compose'
 brew 'node'
 brew 'openjdk@8'
+brew 'imagemagick'
+brew 'jq'
+brew 'wget'
+
