@@ -101,6 +101,7 @@
  '(custom-safe-themes
    '("8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26" default))
  '(evil-search-module 'evil-search)
+ '(evil-undo-system 'undo-fu)
  '(frame-background-mode 'dark)
  '(package-selected-packages '(use-package))
  '(projectile-enable-caching t))
