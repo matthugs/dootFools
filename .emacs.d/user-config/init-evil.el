@@ -15,6 +15,7 @@
 (use-package evil
 	     :init
 	     (setq evil-cross-lines t)
+	     (setq evil-undo-system 'undo-fu)
 	     (setq-default evil-symbol-word-search t)
 	     :config
 	     (evil-mode 1)
@@ -22,5 +23,7 @@
 	     (define-key evil-window-map (kbd "C-h") 'evil-window-left)
 	     (define-key evil-window-map (kbd "C-l") 'evil-window-right)
 	     (define-key evil-window-map (kbd "C-j") 'evil-window-down))
+
+(use-package undo-fu)
 
 (provide 'init-evil)
