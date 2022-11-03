@@ -25,5 +25,6 @@
 	     (define-key evil-window-map (kbd "C-j") 'evil-window-down))
 
 (use-package undo-fu)
+(use-package evil-matchit)
 
 (provide 'init-evil)
