@@ -96,7 +96,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(ag-arguments '("--smart-case" "--stats" "--hidden"))
+ '(ag-arguments '("--smart-case" "--stats" "--hidden" "--ignore" ".git"))
  '(auth-sources '("~/.authinfo.gpg" "~/.netrc" "~/.authinfo"))
  '(custom-safe-themes
    '("8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26" default))
