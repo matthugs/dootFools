@@ -17,4 +17,8 @@ cask 'emacs'
 brew 'htop'
 brew 'inetutils'
 cask 'hammerspoon'
+brew 'helm'
+brew 'minikube'
+brew 'krew'
+brew 'kustomize'
 
