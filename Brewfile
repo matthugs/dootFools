@@ -21,4 +21,4 @@ brew 'helm'
 brew 'minikube'
 brew 'krew'
 brew 'kustomize'
-
+brew 'yq'
