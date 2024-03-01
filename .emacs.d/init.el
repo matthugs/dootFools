@@ -21,7 +21,6 @@
   :bind (("M-x" . helm-M-x)
          ("C-x C-f" . helm-find-files))
   :config
-  (require 'helm-config)
   (setq helm-candidate-number-limit 100)
   (helm-mode 1))
 
