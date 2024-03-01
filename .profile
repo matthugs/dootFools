@@ -14,8 +14,6 @@ is_osx || {
         echo -e "\033]710;-xos4-terminus-medium-*-*-*-$1-*-*-*-*-*-iso10646-1\033\\"
     }
 
-    ssh-add -l > /dev/null || alias ssh='ssh-add -l > /dev/null || ssh-add && unalias ssh; ssh';
-
     alias ls='ls --color=auto';
 
     alias clip='xclip -o | xclip -selection c';
