@@ -38,4 +38,6 @@ is_osx || {
     export PATH="/home/matt/bin:$PATH"
 }
 
-eval $(pyenv init --path)
+
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
