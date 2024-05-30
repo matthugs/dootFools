@@ -1,0 +1,2 @@
+packages:
+- xsel # particularly relevant for copying and pasting out of emacs
