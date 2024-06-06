@@ -7,4 +7,4 @@ requirements-for-installing-apt-packages:
 	sudo apt install yq
 
 install-apt-packages: requirements-for-installing-apt-packages
-	yq eval '.packages[]' apt-package-list.yaml | xargs sudo apt install
+	yq eval '.packages[]' apt-package-list.yaml | xargs sudo apt install -y
