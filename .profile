@@ -34,6 +34,7 @@ is_osx && {
 
 is_osx || {
     export PATH="/home/matt/bin:$PATH"
+    ssh-add -l > /dev/null || alias ssh='ssh-add -l > /dev/null || ssh-add && unalias ssh; ssh';
 }
 
 
