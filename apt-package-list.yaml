@@ -1,3 +1,4 @@
 packages:
 - xsel # particularly relevant for copying and pasting out of emacs
 - pwgen # password generator
+- jq # programming language useful for json parsing hacks
