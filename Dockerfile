@@ -6,9 +6,9 @@
 
 FROM ubuntu:noble
 
-COPY ./.emacs.d/ /root/.emacs.d/
-
 RUN apt-get update && apt-get install -y emacs-nox git
+
+COPY ./.emacs.d/ /root/.emacs.d/
 
 # We want this fore-grounded from the standpoint of docker, since `emacs
 # --daemon`'s default behaviour of returning your terminal to you (i.e.
