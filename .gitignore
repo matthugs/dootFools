@@ -6,3 +6,6 @@
 /.emacs.d/projectile-bookmarks.eld
 .emacs.d/elpa
 /.emacs.d/transient/history.el
+/.emacs.d/straight/repos/
+/.emacs.d/straight/build/
+/.emacs.d/straight/build-cache.el
