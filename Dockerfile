@@ -11,6 +11,7 @@ RUN apt-get update && apt-get install -y emacs-nox git
 COPY .emacs.d/init.el /root/.emacs.d/init.el
 COPY .emacs.d/straight/versions/default.el /root/.emacs.d/straight/versions/
 COPY .emacs.d/user-config /root/.emacs.d/user-config
+COPY .emacs.d/autogen-config /root/.emacs.d/autogen-config
 
 # We want this fore-grounded from the standpoint of docker, since `emacs
 # --daemon`'s default behaviour of returning your terminal to you (i.e.

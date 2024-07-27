@@ -32,4 +32,4 @@
          (setq interprogram-paste-function 'copy-from-osx)
          )))
 
-  (provide 'init-copypasta)
+(provide 'init-copypasta)
