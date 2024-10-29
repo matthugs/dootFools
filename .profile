@@ -22,8 +22,8 @@ is_osx || {
 alias emc='emacsclient -t'
 
 is_osx && {
-    export PATH="/Users/mhughes/bin:/usr/local/bin:/usr/local/sbin:$PATH"
     ssh-add -l --apple-use-keychain > /dev/null || alias ssh='ssh-add -l --apple-use-keychain > /dev/null || ssh-add --apple-use-keychain && unalias ssh; ssh';
+    export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
     # This function is for titling terminal tabs in iterm; not sure how widely
     # applicable it is.
     # nabbed from answers to https://superuser.com/questions/419775/with-bash-iterm2-how-to-name-tabs
@@ -33,7 +33,7 @@ is_osx && {
 }
 
 is_osx || {
-    export PATH="/home/matt/bin:$PATH"
+    export PATH="$HOME/bin:$PATH"
     ssh-add -l > /dev/null || alias ssh='ssh-add -l > /dev/null || ssh-add && unalias ssh; ssh';
 }
 
