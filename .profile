@@ -22,7 +22,6 @@ is_osx || {
 alias emc='emacsclient -t'
 
 is_osx && {
-    ssh-add -l --apple-use-keychain > /dev/null || alias ssh='ssh-add -l --apple-use-keychain > /dev/null || ssh-add --apple-use-keychain && unalias ssh; ssh';
     export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
     # This function is for titling terminal tabs in iterm; not sure how widely
     # applicable it is.
