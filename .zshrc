@@ -27,9 +27,9 @@ bashcompinit
 if [[ -x "$(command -v pyenv)" ]]; then
     eval "$(pyenv init -)"
 
-    if [[ -d "$(pyenv root)/plugins/pyenv-virtualenvwrapper" ]]; then
+    if pyenv commands | grep -q "virtualenvwrapper"; then
         export WORKON_HOME=$HOME/.virtualenvs
-        export VIRTUALENVWRAPPER_PYTHON=/home/matt/.pyenv/shims/python3
+        export VIRTUALENVWRAPPER_PYTHON=$HOME/.pyenv/shims/python3
         pyenv virtualenvwrapper
     fi
 fi
