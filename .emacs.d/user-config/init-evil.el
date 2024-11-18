@@ -26,5 +26,6 @@
 
 (use-package undo-fu)
 (use-package evil-matchit)
+(use-package evil-textobj-line)
 
 (provide 'init-evil)
