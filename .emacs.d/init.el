@@ -19,7 +19,7 @@
 (add-to-list 'load-path (expand-file-name "user-config" user-emacs-directory))
 (add-to-list 'load-path (expand-file-name "autogen-config" user-emacs-directory))
 
-(require 'use-package)
+(straight-use-package 'use-package)
 (require 'init-magit)
 (require 'init-evil)
 (require 'init-php)
@@ -42,7 +42,6 @@
   (helm-projectile-on))
 
 (use-package ag)
-
 
 (setq shell-command-switch "-ic")
 
