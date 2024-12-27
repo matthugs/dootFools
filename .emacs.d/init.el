@@ -23,6 +23,7 @@
 (require 'init-magit)
 (require 'init-evil)
 (require 'init-php)
+(require 'init-scala)
 (require 'init-copypasta)
 
 (use-package helm
