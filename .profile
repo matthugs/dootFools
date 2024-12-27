@@ -48,3 +48,4 @@ if [[ -x "$(command -v phpenv)" ]]; then
     export PATH="$HOME/.phpenv/bin:$PATH"
     eval "$(phpenv init -)"
 fi
+[ -s "$HOME/.cargo/env" ] && \. "$HOME/.cargo/env"
