@@ -3,3 +3,5 @@ packages:
 - pwgen # password generator
 - jq # programming language useful for json parsing hacks
 - sqlite3 # database, motivated currently by firefox configuration
+- tree-sitter-cli # parser tool which integrates with emacs package for yaml (zkry/yaml-pro in particular)
+- tree-sitter-dev # actually perhaps this is what I need here

@@ -24,6 +24,7 @@
 (require 'init-evil)
 (require 'init-php)
 (require 'init-scala)
+(require 'init-yaml)
 (require 'init-copypasta)
 
 (use-package helm
