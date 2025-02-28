@@ -24,6 +24,7 @@
 (require 'init-evil)
 (require 'init-php)
 (require 'init-scala)
+(require 'init-terraform)
 (require 'init-yaml)
 (require 'init-copypasta)
 
