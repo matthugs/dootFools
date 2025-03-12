@@ -36,6 +36,9 @@ is_osx || {
     ssh-add -l > /dev/null || alias ssh='ssh-add -l > /dev/null || ssh-add && unalias ssh; ssh';
 }
 
+# handy jq trick for converting non-deeply nested json array into a csv
+alias csvify='jq -r '\''(map(keys) | add | unique) as $cols | map(. as $row | $cols | map($row[.])) as $rows | $cols, $rows[] | @csv'\'
+
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 [[ -d $HOME/go ]] && export GOPATH="$HOME/go" && export PATH="$GOPATH/bin:$PATH"
