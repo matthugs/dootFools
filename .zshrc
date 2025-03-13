@@ -1,7 +1,7 @@
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 SAVEHIST=10000000
-setopt appendhistory extendedglob nomatch notify extended_history inc_append_history_time
+setopt appendhistory extendedglob nomatch notify extended_history inc_append_history_time hist_ignore_space
 unsetopt autocd beep
 bindkey -v
 # End of lines configured by zsh-newuser-install
