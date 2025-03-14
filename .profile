@@ -37,7 +37,7 @@ is_osx || {
 }
 
 # handy jq trick for converting json array into a csv
-alias csvify='jq -r '\''(map(keys) | add | unique) as $cols | map(. as $row | $cols | map($row[.] | tojson)) as $rows | $cols, $rows[] | @csv'\'
+alias csvify='jq -r '\''(map(keys) | add | unique) as $cols | map(. as $row | $cols | map($row[.] | tostring)) as $rows | $cols, $rows[] | @csv'\'
 
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
