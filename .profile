@@ -57,3 +57,7 @@ fi
 [[ -d "$HOME/Library/Application Support/Coursier" ]] && export PATH="$PATH:/Users/tkma6ll/Library/Application Support/Coursier/bin"
 # <<< coursier install directory <<<
 
+if [[ -d $HOME/.config/gcloud ]]; then
+    export GOOGLE_APPLICATION_CREDENTIALS="$HOME/.config/gcloud/application_default_credentials.json"
+    export GOOGLE_CLOUD_PROJECT=kohls-bda-lle
+fi
