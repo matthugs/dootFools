@@ -52,3 +52,8 @@ if [[ -x "$(command -v phpenv)" ]]; then
     eval "$(phpenv init -)"
 fi
 [ -s "$HOME/.cargo/env" ] && \. "$HOME/.cargo/env"
+
+# >>> coursier install directory >>>
+[[ -d "$HOME/Library/Application Support/Coursier" ]] && export PATH="$PATH:/Users/tkma6ll/Library/Application Support/Coursier/bin"
+# <<< coursier install directory <<<
+
