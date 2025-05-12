@@ -61,3 +61,11 @@ if [[ -d $HOME/.config/gcloud ]]; then
     export GOOGLE_APPLICATION_CREDENTIALS="$HOME/.config/gcloud/application_default_credentials.json"
     export GOOGLE_CLOUD_PROJECT=kohls-bda-lle
 fi
+
+if [[ -x "$(command -v column)" ]]; then
+    function csview()
+    {
+        local file="$1"
+        cat "$file" | sed -e 's/,,/, ,/g;s/,,/, ,/g' | column -s, -t | less '-#5' -N -S
+    }
+fi
