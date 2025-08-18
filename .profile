@@ -29,6 +29,8 @@ is_osx && {
     function title {
         echo -ne "\033]0;"$*"\007"
     }
+
+    export HOMEBREW_DEVELOPER=1
 }
 
 is_osx || {
