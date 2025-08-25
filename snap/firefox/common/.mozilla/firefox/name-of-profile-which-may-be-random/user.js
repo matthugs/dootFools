@@ -12,3 +12,12 @@ user_pref("browser.newtabpage.activity-stream.system.showWeather", false);
 user_pref("extensions.formautofill.addresses.enabled", false);
 user_pref("extensions.formautofill.creditCards.enabled", false);
 user_pref("browser.ml.chat.enabled", false);
+user_pref("browser.ml.chat.shortcuts", false);
+user_pref("browser.ml.chat.shortcuts.custom", false);
+user_pref("browser.ml.chat.sidebar", false);
+user_pref("extensions.ml.enable", false);
+user_pref("browser.tabs.groups.smart.enabled", false);
+user_pref("browser.tabs.groups.smart.optin", false);
+user_pref("browser.tabs.groups.smart.userEnabled", false);
+
+
