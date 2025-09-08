@@ -58,7 +58,7 @@
          (line-number-of-point (number-to-string (line-number-at-pos)))
          (repo-path (parse-repo-path-from-url remote-url)))
     (if is-gitlab?
-        (kill-new (concat "https://gitlab.com" repo-path "-/tree/" commit "/" path-to-visited-file "#L" line-number-of-point))
+        (kill-new (concat "https://gitlab.com/" repo-path "/-/tree/" commit "/" path-to-visited-file "#L" line-number-of-point))
       (if is-github?
           (kill-new (concat "https://github.com/" repo-path "/blob/" commit "/" path-to-visited-file "#L" line-number-of-point))
   ))))
