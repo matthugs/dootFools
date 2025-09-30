@@ -1,4 +1,4 @@
-.PHONY: install-apt-packages requirements-for-installing-apt-packages
+.PHONY: install-apt-packages requirements-for-installing-apt-packages clean link-all
 
 UBUNTU_RELEASE_CODENAME != cat /etc/lsb-release | grep DISTRIB_CODENAME | cut -f2 -d=
 
@@ -8,3 +8,11 @@ requirements-for-installing-apt-packages:
 
 install-apt-packages: requirements-for-installing-apt-packages
 	yq eval '.packages[]' apt-package-list.yaml | xargs sudo apt install -y
+
+~/.config/git/ignore:
+	ln -s ~/dootFools/.config/git/ignore ~/.config/git/ignore
+
+link-all: ~/.config/git/ignore
+
+clean-links:
+	-rm ~/.config/git/ignore
