@@ -19,5 +19,5 @@ user_pref("extensions.ml.enable", false);
 user_pref("browser.tabs.groups.smart.enabled", false);
 user_pref("browser.tabs.groups.smart.optin", false);
 user_pref("browser.tabs.groups.smart.userEnabled", false);
-
-
+user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons", false);
+user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features", false);
