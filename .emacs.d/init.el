@@ -28,6 +28,7 @@
 (require 'init-rust)
 (require 'init-yaml)
 (require 'init-copypasta)
+(require 'init-current-job)
 
 (use-package helm
   :demand t
