@@ -8,7 +8,7 @@
 	     (evil-leader/set-key
 	       "b" 'helm-projectile-switch-to-buffer
 	       "g" 'ggtags-find-tag-dwim
-	       "md" 'magit-dispatch-popup
+	       "md" 'magit-dispatch
 	       "ms" 'magit-status
 	       "mb" 'magit-blame-addition
 	       "f" 'helm-projectile-find-file))
