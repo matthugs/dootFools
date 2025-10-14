@@ -1,3 +1,4 @@
+(require 'init-evil)
 
 (defun get-qlik-reload-history ()
   "guess a link to qlik reload logs for the app described by config in current buffer"
@@ -6,5 +7,10 @@
          (qlik-item-id (gethash "qlik_item_id" buffer-json))
          (qlik-tenant (gethash "qlik_tenant" buffer-json)))
     (kill-new (concat "https://" qlik-tenant ".us.qlikcloud.com/item/" qlik-item-id "/history"))))
+
+
+(evil-leader/set-key
+  "cqr" 'get-qlik-reload-history)
+
 
 (provide 'init-current-job)
