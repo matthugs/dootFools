@@ -48,6 +48,8 @@
 
 (use-package ag)
 
+(use-package jq-mode)
+
 (setq shell-command-switch "-ic")
 
 (use-package exec-path-from-shell
