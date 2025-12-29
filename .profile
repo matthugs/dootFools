@@ -73,3 +73,6 @@ if [[ -x "$(command -v column)" ]]; then
         cat "$file" | sed -e 's/,,/, ,/g;s/,,/, ,/g' | column -s, -t | less '-#5' -N -S
     }
 fi
+
+# so much poorly indented sql, so little time in which to correct any of it
+alias format_sql="pbpaste | npx sql-formatter -l bigquery | pbcopy"
