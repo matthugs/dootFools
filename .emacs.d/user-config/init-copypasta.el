@@ -1,5 +1,3 @@
-(require 'init-evil)
-
 (defun copy-from-osx ()
   (shell-command-to-string "pbpaste"))
 
@@ -62,9 +60,6 @@
       (if is-github?
           (kill-new (concat "https://github.com/" repo-path "/blob/" commit "/" path-to-visited-file "#L" line-number-of-point))
   ))))
-
-(evil-leader/set-key
-  "cg" 'get-source-control-link)
 
 
 
