@@ -18,6 +18,7 @@
  '(evil-search-module 'evil-search)
  '(evil-undo-system 'undo-fu)
  '(frame-background-mode 'dark)
+ '(org-startup-truncated nil)
  '(package-selected-packages '(use-package))
  '(projectile-enable-caching t)
  '(straight-check-for-modifications '(check-on-save find-when-checking) nil nil "this could have consequences if we do end up doing a lot of emacs package development; see https://github.com/radian-software/straight.el/blob/8341ae9b1bfebe5c6d99e3aef6d425ba0196be0a/README.md#my-init-time-got-slower"))
