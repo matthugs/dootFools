@@ -1,3 +1,7 @@
 [user]
 	email = 6405097+matthugs@users.noreply.github.com
 	name = Matt Hughes
+[init]
+	defaultBranch = main
+[includeIf "gitdir:~/code/kohls/"]
+        path = ~/code/kohls/.gitconfig
