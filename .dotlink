@@ -10,3 +10,4 @@ iterm-default-profile.json
 .tmux.conf
 .gitconfig
 .config/git/ignore
+code/kohls/.gitconfig
