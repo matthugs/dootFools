@@ -1,0 +1,12 @@
+.zshrc
+.vimrc
+.zprofile
+.profile
+.ssh/config
+.zsh
+.hammerspoon
+.emacs.d
+iterm-default-profile.json
+.tmux.conf
+.gitconfig
+.config/git/ignore
