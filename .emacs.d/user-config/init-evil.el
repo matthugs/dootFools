@@ -28,4 +28,7 @@
 (use-package evil-matchit)
 (use-package evil-textobj-line)
 
+(use-package evil-textobj-entire
+  :straight (evil-textobj-entire :host github :repo "nscoder/evil-textobj-entire"))
+
 (provide 'init-evil)
