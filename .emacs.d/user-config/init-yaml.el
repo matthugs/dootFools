@@ -1,5 +1,5 @@
 (use-package yaml-mode
-  :config (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode)))
+  :mode "\\.yml\\'")
 (use-package yaml-pro
   :config (progn
             (add-hook 'yaml-mode-hook 'yaml-pro-ts-mode 1)
