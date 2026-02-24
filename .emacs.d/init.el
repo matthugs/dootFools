@@ -29,6 +29,7 @@
 (require 'init-yaml)
 (require 'init-copypasta)
 (require 'init-current-job)
+(require 'init-python)
 
 (use-package helm
   :demand t
