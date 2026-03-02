@@ -27,6 +27,7 @@
 (require 'init-terraform)
 (require 'init-rust)
 (require 'init-yaml)
+(require 'init-treesit)
 (require 'init-copypasta)
 (require 'init-current-job)
 (require 'init-python)
@@ -58,7 +59,7 @@
   (exec-path-from-shell-initialize))
 
 (use-package web-mode
-  :mode ("\\.mustache\\'" "\\.css\\'" "\\.scss\\'" "\\.jsx\\'" "\\.js\\'" "\\.json\\'" "\\.html\\'")
+  :mode ("\\.mustache\\'" "\\.css\\'" "\\.scss\\'" "\\.jsx\\'" "\\.js\\'" "\\.html\\'")
   :config
   (setq web-mode-markup-indent-offset 2)
   (setq web-mode-attr-indent-offset 2)
