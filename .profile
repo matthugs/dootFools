@@ -20,6 +20,7 @@ is_osx || {
     alias clap='xclip -selection c -o';
 }
 alias emc='emacsclient -t'
+alias emd='emacs --daemon'
 
 is_osx && {
     export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
