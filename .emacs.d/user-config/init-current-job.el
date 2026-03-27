@@ -23,7 +23,9 @@
 (evil-leader/set-key
   "c" 'copypasta)
 
-(editorconfig-mode 1)
+(use-package editorconfig
+  :config
+  (editorconfig-mode 1))
 
 
 (provide 'init-current-job)
