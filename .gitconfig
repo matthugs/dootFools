@@ -5,3 +5,5 @@
 	defaultBranch = main
 [includeIf "gitdir:~/code/kohls/"]
         path = ~/code/kohls/.gitconfig
+[includeIf "gitdir:~/code/non-kohls/codeberg/"]
+        path = ~/code/non-kohls/codeberg/.gitconfig
