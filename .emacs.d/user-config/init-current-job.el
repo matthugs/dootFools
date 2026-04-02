@@ -27,5 +27,7 @@
   :config
   (editorconfig-mode 1))
 
+(use-package powershell)
+
 
 (provide 'init-current-job)
