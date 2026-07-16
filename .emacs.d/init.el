@@ -25,7 +25,7 @@
 (require 'init-php)
 (require 'init-scala)
 (require 'init-terraform)
-(require 'init-rust)
+;; (require 'init-rust)
 (require 'init-yaml)
 (require 'init-treesit)
 (require 'init-copypasta)
