@@ -1,3 +1,4 @@
+;;; ...  -*- lexical-binding: t -*-
 ;; the main goals of my customized faces is to make all the magit
 ;; headings show up in tmux terminals, which is where I tend to do all
 ;; of my emacsin'

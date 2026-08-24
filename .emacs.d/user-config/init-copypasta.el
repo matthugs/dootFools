@@ -1,3 +1,4 @@
+;;; ...  -*- lexical-binding: t -*-
 (defun copy-from-osx ()
   (shell-command-to-string "pbpaste"))
 

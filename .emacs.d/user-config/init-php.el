@@ -1,3 +1,4 @@
+;;; ...  -*- lexical-binding: t -*-
 (defun my-php-mode-setup ()
   "sets up styling and modes according to the Matt Hughes-approved
     way"

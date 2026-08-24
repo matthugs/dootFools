@@ -1,3 +1,4 @@
+;;; ...  -*- lexical-binding: t -*-
 ;; for whatever reason, this must-happen-before-evil-is-loaded config
 ;; cannot simply be placed in the :init of evil's declaration.
 (setq evil-want-C-u-scroll t)

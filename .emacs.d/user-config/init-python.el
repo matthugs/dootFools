@@ -1,3 +1,4 @@
+;;; ...  -*- lexical-binding: t -*-
 (require 'init-treesit)
 
 (add-to-list 'auto-mode-alist '("/\\.coveragerc\\'" . conf-mode))

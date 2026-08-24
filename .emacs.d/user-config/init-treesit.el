@@ -1,3 +1,4 @@
+;;; ...  -*- lexical-binding: t -*-
 ;; still need to M-x treesit-install-language-grammar to make use of the below
 (setq treesit-language-source-alist
       '(
