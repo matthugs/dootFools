@@ -55,6 +55,7 @@ if [[ -x "$(command -v phpenv)" ]]; then
     eval "$(phpenv init -)"
 fi
 [ -s "$HOME/.cargo/env" ] && \. "$HOME/.cargo/env"
+[ -s "$HOME/.cargo/bin" ] && export PATH="$PATH:$HOME/.cargo/bin"
 
 [ -d "$HOME/.local/bin" ] && export PATH="$PATH:$HOME/.local/bin"
 
