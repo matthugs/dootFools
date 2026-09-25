@@ -11,3 +11,4 @@ iterm-default-profile.json
 .gitconfig
 .config/git/ignore
 code/kohls/.gitconfig
+Library/Application Support/com.mitchellh.ghostty/config = ghostty-config
