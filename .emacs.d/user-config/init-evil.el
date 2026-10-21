@@ -12,7 +12,8 @@
 	       "md" 'magit-dispatch
 	       "ms" 'magit-status
 	       "mb" 'magit-blame-addition
-	       "f" 'helm-projectile-find-file))
+	       "f" 'helm-projectile-find-file)
+             :after (evil))
 (use-package evil
 	     :init
 	     (setq evil-cross-lines t)
