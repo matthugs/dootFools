@@ -55,9 +55,13 @@
 
 (setq shell-command-switch "-ic")
 
-(use-package exec-path-from-shell
-  :config
-  (exec-path-from-shell-initialize))
+(cond ((memq window-system '(mac ns x pgtk))
+       (use-package exec-path-from-shell
+         :config
+         (exec-path-from-shell-initialize)))
+      ((memq window-system '(w32))
+       (use-package exec-path-from-powershell
+         :custom (exec-path-from-shell-shell-name "powershell.exe"))))
 
 (use-package web-mode
   :mode ("\\.mustache\\'" "\\.css\\'" "\\.scss\\'" "\\.jsx\\'" "\\.js\\'" "\\.html\\'")
