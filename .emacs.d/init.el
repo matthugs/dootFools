@@ -21,6 +21,9 @@
 (add-to-list 'load-path (expand-file-name "autogen-config" user-emacs-directory))
 
 (straight-use-package 'use-package)
+
+(require 'customised-variables)
+
 (require 'init-magit)
 (require 'init-evil)
 (require 'init-php)
@@ -110,4 +113,3 @@
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 
-(require 'customised-variables)
